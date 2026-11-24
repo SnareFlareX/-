@@ -177,12 +177,10 @@ FILES = [
      629525, CLIENT),
 
     # ------------------------------------------------------------------ world
-    ("mods/abandoned_structures-1.0.0-fabric-1.21.8.jar",
-     "https://cdn.modrinth.com/data/HfVuZhTe/versions/8S2bSBgt/abandoned_structures-1.0.0-fabric-1.21.8.jar",
-     "5850737d1f6644419acf77668b36c5e711968fcf",
-     "b5c54fe0ebcc7415227c963b00ef866d375329afa124d943a342d7e8fd691f185c884104e88b0024e58e383cad3493e3a1b7383b0fcb32e8338e55e27007e196",
-     77745, BOTH),
-
+    # NOTE: Abandoned Structures 1.0.0 was removed in 1.0.1 - its mixin
+    # targets ServerPlayer.drop() which no longer exists in 1.21.11
+    # (crash: InvalidInjectionException method_37413). No fixed release
+    # exists on Modrinth. Structory covers the same niche.
     ("mods/Structory_26.2_v1.3.7.jar",
      "https://cdn.modrinth.com/data/aKCwCJlY/versions/TUbwu7eG/Structory_26.2_v1.3.7.jar",
      "8a9a1a1b3f74398310420b6fbe2c26ef142bed42",

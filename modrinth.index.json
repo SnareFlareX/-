@@ -1,7 +1,7 @@
 {
   "formatVersion": 1,
   "game": "minecraft",
-  "versionId": "1.0.0",
+  "versionId": "1.0.1",
   "name": "THE LAST LIGHT",
   "summary": "Fabric 1.21.11 post-apocalyptic survival: abandoned cities, graveyards, cold fog and rare horror. Tuned for GTX 1050 3 GB.",
   "files": [
@@ -409,21 +409,6 @@
         "https://cdn.modrinth.com/data/nrikgvxm/versions/vH32Nh26/particlerain-4.0.4%2B1.21.11-fabric.jar"
       ],
       "fileSize": 629525
-    },
-    {
-      "path": "mods/abandoned_structures-1.0.0-fabric-1.21.8.jar",
-      "hashes": {
-        "sha1": "5850737d1f6644419acf77668b36c5e711968fcf",
-        "sha512": "b5c54fe0ebcc7415227c963b00ef866d375329afa124d943a342d7e8fd691f185c884104e88b0024e58e383cad3493e3a1b7383b0fcb32e8338e55e27007e196"
-      },
-      "env": {
-        "client": "required",
-        "server": "required"
-      },
-      "downloads": [
-        "https://cdn.modrinth.com/data/HfVuZhTe/versions/8S2bSBgt/abandoned_structures-1.0.0-fabric-1.21.8.jar"
-      ],
-      "fileSize": 77745
     },
     {
       "path": "mods/Structory_26.2_v1.3.7.jar",

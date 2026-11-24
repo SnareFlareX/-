@@ -15,7 +15,7 @@ ROOT = Path(__file__).resolve().parent.parent
 BUILD = ROOT / "build"
 OVERRIDES = BUILD / "overrides"
 NAME = "THE LAST LIGHT"
-VERSION = "1.0.0"
+VERSION = "1.0.1"
 MC = "1.21.11"
 LOADER = "0.20.1"
 
