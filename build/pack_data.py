@@ -30,17 +30,9 @@ FILES = [
      "507ab10b7938dcd14d33121b8462649bdbe575cef248e917dfdf7566078ab5d0195ca1add95eae4863de3f652eb56db0a8669a67d5b5344e094d086f9dab5a08",
      268662, BOTH),
 
-    ("mods/geckolib-fabric-1.21.11-5.4.6.jar",
-     "https://cdn.modrinth.com/data/8BmcQJ2H/versions/OUCukQHN/geckolib-fabric-1.21.11-5.4.6.jar",
-     "3941ddfa07eebb4e516f4e46da04a1f6281b1cb5",
-     "7ea16133148f5d53231650721024d621f5235c0620265d735b7171d6181e8bacab8b4363b1337ab5eea55d2fd3c442601ed440606ded0b945fc010d9e05562aa",
-     821698, BOTH),
-
-    ("mods/villagertradingplus-fabric-mc1.21.11-1.1.0.jar",
-     "https://cdn.modrinth.com/data/DhOXUfnP/versions/FS5RnDZM/villagertradingplus-fabric-mc1.21.11-1.1.0.jar",
-     "48c32c4da1154e1fe3f0d1d74abacdafde89b011",
-     "1d64e51e5bdcad446bcc08827b6928108dc780b2f40eebf67e7f1c76c165d384581c81ef0371da0e6c18bccb5cfa6072ec7843f97328dcde12321f521ae65481",
-     259793, BOTH),
+    # NOTE: GeckoLib + VillagersTradingPlus were removed in 1.0.2 together
+    # with The Graveyard (user request - no story/lore content). Nothing
+    # else in the pack needs them.
 
     ("mods/ForgeConfigAPIPort-v21.11.1-mc1.21.11-Fabric.jar",
      "https://cdn.modrinth.com/data/ohNO6lps/versions/uXrWPsCu/ForgeConfigAPIPort-v21.11.1-mc1.21.11-Fabric.jar",
@@ -187,11 +179,8 @@ FILES = [
      "4178a15f32f6ed3d59a7eb2222a8e3f539efd7b54d8ffb790cbf1dfe5c54c6ce6ec33220e148424109c6360c4c6f081b9fbebfe74745fe3c8f05619a06ccb9ec",
      1261346, BOTH),
 
-    ("mods/graveyard-FABRIC-4.0.0+mc1.21.11.jar",
-     "https://cdn.modrinth.com/data/QivVPB8W/versions/6QPfcUMY/graveyard-FABRIC-4.0.0%2Bmc1.21.11.jar",
-     "230fd297dd1d1c4772270b756a44d2cdb64cea83",
-     "481667df2c2b633b9aad5c949f9a428e29f9fa6cc52a2b4037b4693f762fa8ba86bf86521cdf416d28f8903e89caa55e54673d2a80588566b48dc651fb8d0a94",
-     11113998, BOTH),
+    # NOTE: The Graveyard was removed in 1.0.2 (user request - the 36-page
+    # lore chronicle / story content was unwanted).
 
     ("mods/lostcities-1.2.0+1.21.9-1.21.11.jar",
      "https://cdn.modrinth.com/data/tsxv5KHT/versions/i7mir4E4/lostcities-1.2.0%2B1.21.9-1.21.11.jar",
@@ -249,4 +238,53 @@ FILES = [
      "13f6db33d5e3f251635e26d062dd6e4743d4181e",
      "a948b0e0463480317a65c08e780c3b4e5edf855b98e85a39f141b2d6ea4a723ed6f5f20193093cc25b6a9214793303f942696d189f002f885ddbd52fa531a434",
      21002, CLIENT),
+
+    # ------------------------------------------- atmosphere shaders (1.0.2)
+    ("shaderpacks/ComplementaryReimagined_r5.10.zip",
+     "https://cdn.modrinth.com/data/HVnmMxH1/versions/RKfUB9VC/ComplementaryReimagined_r5.10.zip",
+     "ce5f303920c12f858c6b4c27a521fe7a1ba70aea",
+     "edced01fb330af215ac73b8d9d31011565089f971f87145b87f413f40ee2128b48970aed26f8e5e879899647ec847b3eefca64bfc013aabbcf25275a207f663d",
+     567387, CLIENT),
+
+    ("shaderpacks/ComplementaryUnbound_r5.10.zip",
+     "https://cdn.modrinth.com/data/R6NEzAwj/versions/QJiYQisE/ComplementaryUnbound_r5.10.zip",
+     "7a9a6b667b89d6b442837c5c367cd6cc8356b400",
+     "bccfca6b07ea4c75b3d7c8bfb875de54ecb3ce4416c960194974d887b65c2aebc9ebd2f6911356bdcb2b0f8740ce70adbf2fdf2e39698616c194104400f70e62",
+     567391, CLIENT),
+
+    ("shaderpacks/BSL_v10.1.8.zip",
+     "https://cdn.modrinth.com/data/Q1vvjJYV/versions/Y68yiql9/BSL_v10.1.8.zip",
+     "e89818c8827d0131c102fb480c3c3446624db0df",
+     "94a3c25d6820868db624e11347873e6b572e7cd571967d9ac6f4690ca5d37ca302a7645d85eec800e0654541e3825fba14d37b5a25d3996aaf038178552be26f",
+     1134153, CLIENT),
+
+    ("shaderpacks/Solas Shader V3.9.zip",
+     "https://cdn.modrinth.com/data/EpQFjzrQ/versions/IsqhVpb8/Solas%20Shader%20V3.9.zip",
+     "7130b2ef691aa90f117231ba9ab01e7f6fca6fab",
+     "754f88b030fc26a6284bc7fdede886af494b227a67e716ce89c8ec5a185f8ad33d0aeac573245c5e39621ac5b24b4778d50ce566647135c2f1b2f63643901c69",
+     1243081, CLIENT),
+
+    ("shaderpacks/photon_v1.4.zip",
+     "https://cdn.modrinth.com/data/lLqFfGNs/versions/BnGklH5y/photon_v1.4.zip",
+     "96c7730f5891a42e39bbf1f0f5a98fa99628a7fe",
+     "2dec87084dccf91a72a06235ecbfb3627f066699b5f70583f06077cba61433aedbfa6af28eb68bf1cdc726149cc3d9a587517cfab59e6a24e9d6a40b6874d655",
+     3857333, CLIENT),
+
+    ("shaderpacks/Bliss_v2.1.2_(Chocapic13_Shaders_edit).zip",
+     "https://cdn.modrinth.com/data/ZvMtQlho/versions/kC2Y8q1P/Bliss_v2.1.2_%28Chocapic13_Shaders_edit%29.zip",
+     "ded6c8a98305f8aff90ef781e7585b33b8452cfd",
+     "dafc60be4980ec40f40edc0f2625cb0976f3c9ce5ed86383146a120480826bb1de70ef5e38b7f1437294ed4d38c6ef3c82ebef0ae4e00b8cee165788c9c18280",
+     1791406, CLIENT),
+
+    ("shaderpacks/Sildur's Enhanced Default v1.20 Fancy.zip",
+     "https://cdn.modrinth.com/data/2jvH1Rcl/versions/va1R00mK/Sildur%27s%20Enhanced%20Default%20v1.20%20Fancy.zip",
+     "cd57d34cb3dd49fc225a19bc001458c298d17049",
+     "f297a1864d6242d1f827c8991d4366d9d9b185871da28d313cef8ca6e10b9eb8c833160f2f634a141e0fa9881738bd57426af41996bedfa6fe7e40e05aec95bc",
+     54991, CLIENT),
+
+    ("shaderpacks/MakeUp-UltraFast-9.6a.zip",
+     "https://cdn.modrinth.com/data/izsIPI7a/versions/vXV151ey/MakeUp-UltraFast-9.6a.zip",
+     "15a581d5aa92cad742c079dd768aae59e0cd379a",
+     "4497cf121736a01c9b4b7c3214d96274edaa44d8bfdd65a26b702ecdf2ae1841db6c1f055b66b3b884c38ea6cea3255dbf006f7e66e2976e1423cf1e0a8e23bb",
+     406852, CLIENT),
 ]

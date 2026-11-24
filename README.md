@@ -3,11 +3,11 @@
 **Fabric 1.21.11 · постапокалипсис · холодная атмосфера · редкие опасные встречи.**
 
 Сборка собрана как настоящий Modrinth-пак: `modrinth.index.json` + `overrides/`,
-все 38 файлов ссылаются на конкретные версии Modrinth с проверенными SHA-1/SHA-512.
+все 43 файла ссылаются на конкретные версии Modrinth с проверенными SHA-1/SHA-512.
 Ни одного мода «на глаз» — каждая версия получена через API Modrinth в ноябре 2026.
 
 ```
-THE-LAST-LIGHT-1.0.1.mrpack   ← готовый пак, импортируется в Prism Launcher
+THE-LAST-LIGHT-1.0.2.mrpack   ← готовый пак, импортируется в Prism Launcher
 modrinth.index.json           ← исходник индекса (то же самое, что внутри пака)
 build/                        ├── pack_data.py   — таблица файлов с хешами
                               ├── build.py       — сборка индекса и .mrpack
@@ -30,8 +30,6 @@ build/                        ├── pack_data.py   — таблица фай
 | Fabric API | `0.141.6+1.21.11` | база |
 | Cloth Config API | `21.11.153+fabric` | конфиги (Atmosfera, Falling Leaves, Drip Sounds, MoreCulling, FastQuit) |
 | Text Placeholder API | `2.8.2+1.21.10` | обязательная зависимость Mod Menu 17 |
-| GeckoLib | `5.4.6` | анимации The Graveyard |
-| VillagersTradingPlus | `1.1.0+mc1.21.11` | обязательная зависимость The Graveyard 4.0 |
 | Forge Config API Port | `21.11.1` | обязательная зависимость The Lost Cities |
 
 ### Оптимизация (профиль GTX 1050 3 GB)
@@ -70,7 +68,6 @@ build/                        ├── pack_data.py   — таблица фай
 | Мод | Версия | Роль |
 |---|---|---|
 | Structory | `1.3.17` | руины, башни, лагеря — «заросшие поселения» |
-| The Graveyard | `4.0.0` | кладбища, склепы, нежить, хроника из 36 страниц |
 | The Lost Cities (Fabric) | `1.2.0` | **отдельный тип мира** — мёртвый мегаполис |
 
 ### Хоррор
@@ -79,7 +76,7 @@ build/                        ├── pack_data.py   — таблица фай
 |---|---|---|
 | Adam's Echo | `0.1.0` | медленный психологический хоррор, сущности в тумане |
 
-### Шейдеры (5 штук, лежат в `shaderpacks/`)
+### Шейдеры (13 штук, лежат в `shaderpacks/`, Iris грузит один на выбор)
 
 | Шейдер | Версия | Профиль |
 |---|---|---|
@@ -88,6 +85,14 @@ build/                        ├── pack_data.py   — таблица фай
 | PixelHaze | `1.0` | лёгкий (Potato) |
 | Resident Craft | `0.1.0` | холодная сине-бирюзовая цветокоррекция |
 | Dread Shader | `1.0.0-beta.1` | мрачный, ручной свет от факелов |
+| Complementary Reimagined | `r5.10` | мягкий туман, объёмный свет, профили Potato–Ultra |
+| Complementary Unbound | `r5.10` | тот же движок, более насыщенная картинка |
+| BSL | `v10.1.8` | классика, тёплый свет, отражения |
+| Solas | `3.9` | кинематографичный, северное сияние, плотный туман |
+| Photon | `v1.4` | современный, цветной свет, bloom |
+| Bliss | `v2.1.2` | deferred-рендер, мягкое освещение |
+| Sildur's Enhanced Default | `v1.20 Fancy` | **самый лёгкий**, ванильный вид + тени |
+| MakeUp Ultra Fast | `9.6a` | **самый лёгкий**, адаптивный под слабое железо |
 
 ---
 
@@ -109,6 +114,7 @@ build/                        ├── pack_data.py   — таблица фай
 
 | Мод | Причина |
 |---|---|
+| **The Graveyard** (`4.0.0`) | Убран по запросу в 1.0.2: хроника на 36 страниц и сюжетная составляющая не понравились. Вместе с ним ушли GeckoLib и VillagersTradingPlus (больше никому не нужны). |
 | **Abandoned Structures** (`1.0.0`) | Заявлена поддержка 1.21.11, но миксин целится в `ServerPlayer.drop()`, которого нет в 1.21.11 — краш на старте (`InvalidInjectionException method_37413`). Исправленной версии на Modrinth нет. Убран в 1.0.1, его нишу закрывает Structory. |
 | **Big Lost City** | Последняя версия — только `26.1 / 26.1.1 / 26.1.2`. Для 1.21.11 файла не существует. Заменён на Structory. |
 | **Mr The LURKER** (`eGABNYkk`) | Beta 1.0.0, «сильнее Wardena», спавн в тёмных местах. В основной профиль не ставлю — ломает баланс «редкой опасности». Если хочется: `mr-the-lurker-1.0.0.jar`, зависимости Fabric API + GeckoLib уже стоят. |
@@ -125,8 +131,8 @@ build/                        ├── pack_data.py   — таблица фай
 ## 4. Установка
 
 1. Открой **Prism Launcher → Add Instance → Import** (или просто перетащи
-   `THE-LAST-LIGHT-1.0.1.mrpack` в окно Prism).
-2. Prism сам поставит **Minecraft 1.21.11 + Fabric Loader 0.20.1** и скачает 38 файлов.
+   `THE-LAST-LIGHT-1.0.2.mrpack` в окно Prism).
+2. Prism сам поставит **Minecraft 1.21.11 + Fabric Loader 0.20.1** и скачает 43 файла.
 3. Проверь, что в `Настройки → Java` выделено **5–6 ГБ** памяти.
 4. Первый запуск: Iris подхватит `Kefir's Flashlight` автоматически
    (это прописано в `overrides/config/iris.properties`).
@@ -136,7 +142,7 @@ build/                        ├── pack_data.py   — таблица фай
 
 ### Мир
 
-- **Обычный мир** — генерируются руины Structory, кладбища The Graveyard.
+- **Обычный мир** — генерируются руины Structory.
 - **Город** — при создании мира выбери тип **Lost Cities**. Это отдельный мир-мегаполис,
   не смешивай его с обычным: генераторы не должны работать в одном мире одновременно.
 
@@ -170,7 +176,6 @@ enableVsync:false     gamma:0.0                 lang:ru_ru
 | LambDynamicLights + Kefir's Flashlight | LambDynamicLights не ставится |
 | Sodium + OptiFine | OptiFine не ставится, только Iris |
 | Mod Menu 17 без Text Placeholder API | Placeholder API добавлен |
-| The Graveyard без GeckoLib / VillagersTradingPlus | обе зависимости добавлены |
 
 ---
 
@@ -181,16 +186,15 @@ python3 build/build.py     # пересобрать индекс и .mrpack
 python3 build/verify.py    # проверить хеши, пути, дубли, целостность zip
 ```
 
-`verify.py` проверяет: 38 записей, корректные SHA-1 (40 hex) и SHA-512 (128 hex),
+`verify.py` проверяет: 43 записи, корректные SHA-1 (40 hex) и SHA-512 (128 hex),
 все URL с `cdn.modrinth.com`, нет дублей путей и выходов за пределы папки инстанса,
 индекс внутри zip совпадает с `modrinth.index.json`.
 
 **Что стоит сделать руками после первого запуска:**
 
 1. `Mod Menu → Adam's Echo` — посмотри частоту событий; если слишком часто, уменьши вес.
-2. `Mod Menu → The Graveyard` — при необходимости отключи отдельных мобов (`graveyard.json5`).
-3. `Options → Video Settings → Shader Packs` — попробуй 4 профиля по очереди.
-4. Если звук Atmosfera кажется громким — `Mod Menu → Atmosfera`, там громкость по слоям.
+2. `Options → Video Settings → Shader Packs` — попробуй шейдеры по очереди.
+3. Если звук Atmosfera кажется громким — `Mod Menu → Atmosfera`, там громкость по слоям.
 
 ---
 
@@ -217,3 +221,16 @@ Iris 1.10.8 требует именно Sodium `0.8.14` (`rkdTcxoT`).
   (`InvalidInjectionException: method_37413`). На Modrinth есть только эта версия,
   исправления нет. Руины и заброшенные постройки по-прежнему даёт Structory.
 - Остальные 37 модов + 5 шейдеров из лога запуска загрузились без ошибок.
+
+
+### 1.0.2 (24.11.2026)
+
+- Убран **The Graveyard** (сюжетная хроника на 36 страниц) по запросу.
+  Вместе с ним удалены его эксклюзивные зависимости **GeckoLib** и
+  **VillagersTradingPlus** — больше никому в паке не нужны.
+- Добавлено **8 атмосферных шейдеров** (все с проверенными версиями под 1.21.11):
+  Complementary Reimagined r5.10, Complementary Unbound r5.10, BSL v10.1.8,
+  Solas 3.9, Photon v1.4, Bliss v2.1.2, Sildur's Enhanced Default v1.20 Fancy,
+  MakeUp Ultra Fast 9.6a. Итого в `shaderpacks/` — 13 шейдеров.
+  Для GTX 1050 рекомендую начинать с **Sildur's Enhanced Default** или
+  **MakeUp Ultra Fast** (самые лёгкие), Complementary — с профиля Potato.

@@ -9,7 +9,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
 INDEX = ROOT / "modrinth.index.json"
-PACK = ROOT / "THE-LAST-LIGHT-1.0.1.mrpack"
+PACK = ROOT / "THE-LAST-LIGHT-1.0.2.mrpack"
 
 REQUIRED_TOP = ["formatVersion", "game", "versionId", "name", "summary", "files", "dependencies"]
 ALLOWED_ENV = {"required", "optional", "unsupported"}
