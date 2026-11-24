@@ -1,0 +1,8 @@
+renderDistance:8
+simulationDistance:5
+maxFps:120
+enableVsync:false
+fov:0.0
+gamma:0.0
+guiScale:0
+lang:ru_ru
