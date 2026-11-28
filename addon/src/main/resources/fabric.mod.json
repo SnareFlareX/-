@@ -1,0 +1,30 @@
+{
+  "schemaVersion": 1,
+  "id": "mcfriend_customizer",
+  "version": "1.0.0",
+  "name": "MCFriend Customizer (Настройка друга)",
+  "description": "Аддон для мода mcfriend («Боря»): быстрая смена скина, имени (с падежами), фраз и профилей прямо в игре по клавише G или команде /друг.",
+  "authors": ["MCFriend Customizer"],
+  "contact": {},
+  "license": "MIT",
+  "icon": "assets/mcfriend_customizer/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "com.mcfriend.customizer.McFriendCustomizer"
+    ],
+    "client": [
+      "com.mcfriend.customizer.client.McFriendCustomizerClient"
+    ]
+  },
+  "mixins": [
+    "mcfriend_customizer.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.15.11",
+    "minecraft": "~1.21.1",
+    "java": ">=21",
+    "fabric-api": "*",
+    "mcfriend": "*"
+  }
+}

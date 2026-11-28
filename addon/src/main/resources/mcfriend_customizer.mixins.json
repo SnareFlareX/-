@@ -1,0 +1,29 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "com.mcfriend.customizer.mixin",
+  "compatibilityLevel": "JAVA_21",
+  "mixins": [
+    "LinesMixin",
+    "BubbleMixin",
+    "WheelMixin",
+    "WheelShowMixin",
+    "BoryaBagMixin",
+    "BoryaEntityMixin"
+  ],
+  "client": [
+    "client.WalkerRendererMixin",
+    "client.BoryaRendererMixin",
+    "client.FaceLayerMixin",
+    "client.BoryaFaceMixin",
+    "client.SkillArtMixin",
+    "client.OknoBoryaScreenMixin",
+    "client.BranchScreenMixin",
+    "client.SkillBranchNameMixin",
+    "client.FightLineMixin",
+    "client.ClientLanguageMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}
